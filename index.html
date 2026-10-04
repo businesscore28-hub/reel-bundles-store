@@ -1,622 +1,597 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reel Bundles — Premium Content Collection</title>
-<meta name="description" content="Premium digital reel bundles for creators. Every bundle ₹29.">
-<meta name="theme-color" content="#090908">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Premium Reel Bundles for creators. Every collection is ₹29.">
+<meta name="theme-color" content="#080908">
+<title>REEL BUNDLES — Premium Content Collection</title>
 
 <style>
-:root{
-  --bg:#090908;
-  --panel:#11110f;
-  --panel2:#151512;
-  --line:#2a2925;
-  --text:#f2eee7;
-  --muted:#9b978f;
-  --gold:#d0ad83;
-  --gold2:#b38a63;
-}
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  line-height:1.5
+  font-family:Arial,Helvetica,sans-serif;
+  background:#080908;
+  color:#eee;
+  line-height:1.6;
 }
 a{color:inherit;text-decoration:none}
-button{font:inherit;cursor:pointer}
-img{display:block;max-width:100%}
-.container{width:min(1180px,calc(100% - 28px));margin:auto}
+button{font:inherit}
+.container{width:min(1180px,92%);margin:auto}
 
-.header{
+header{
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(9,9,8,.97);
-  border-bottom:1px solid var(--line)
+  background:rgba(8,9,8,.94);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid #22241f;
 }
-.header-inner{
-  min-height:72px;
+.nav{
+  height:72px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:20px
 }
-.brand{display:flex;align-items:center;gap:10px}
-.brand-mark{
-  width:40px;
-  height:40px;
-  border:1px solid #80694e;
-  display:grid;
-  place-items:center;
-  border-radius:4px;
-  color:var(--gold);
+.logo{
+  font-size:20px;
   font-weight:800;
-  font-size:17px
+  letter-spacing:2px;
 }
-.brand-title{font-size:17px;font-weight:800;letter-spacing:.04em}
-.brand-sub{font-size:9px;color:#77736b;letter-spacing:.16em;margin-top:2px}
-.nav{display:flex;gap:25px;font-size:12px;color:#aaa69e}
-.nav a:hover{color:#fff}
-.header-right{display:flex;gap:8px;align-items:center}
-.btn{
-  min-height:42px;
-  padding:0 17px;
-  border:1px solid var(--line);
-  border-radius:3px;
-  background:var(--panel);
-  color:var(--text)
+.logo span{color:#c99758}
+.nav-links{
+  display:flex;
+  gap:24px;
+  color:#aaa;
+  font-size:14px;
 }
-.btn-primary{background:#6f5036;border-color:#8e6b4c}
-.cart-btn{position:relative;padding:0 15px}
+.nav-links a:hover{color:#fff}
+
+.cart-btn{
+  border:1px solid #3b3a34;
+  background:#11120f;
+  color:#eee;
+  padding:9px 15px;
+  border-radius:8px;
+  cursor:pointer;
+}
 .cart-count{
-  position:absolute;
-  right:-6px;
-  top:-7px;
-  width:20px;
-  height:20px;
+  background:#c99758;
+  color:#111;
   border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:var(--gold);
-  color:#17120d;
-  font-size:10px;
-  font-weight:800
+  min-width:20px;
+  height:20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:bold;
+  margin-left:5px;
 }
 
 .hero{
+  min-height:620px;
   display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:55px;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
   align-items:center;
-  padding:78px 0 70px
+  padding:80px 0;
 }
 .eyebrow,.kicker{
-  font-size:10px;
+  color:#c99758;
   text-transform:uppercase;
-  letter-spacing:.18em;
-  color:var(--gold);
-  margin-bottom:17px
+  letter-spacing:3px;
+  font-size:11px;
+  font-weight:bold;
 }
 .hero h1{
-  font-size:clamp(44px,7vw,76px);
-  line-height:.98;
-  letter-spacing:-.055em;
-  margin:0
+  font-size:clamp(42px,6vw,78px);
+  line-height:1;
+  margin:18px 0 25px;
+  letter-spacing:-3px;
 }
-.hero h1 span{color:var(--gold)}
+.hero h1 em{
+  color:#c99758;
+  font-style:normal;
+}
 .hero p{
-  color:var(--muted);
-  font-size:16px;
-  max-width:600px;
-  margin:23px 0 0
+  color:#aaa;
+  max-width:590px;
+  font-size:17px;
 }
-.hero-actions{display:flex;gap:9px;margin-top:27px;flex-wrap:wrap}
-.hero-note{font-size:11px;color:#77736b;margin-top:14px}
+.hero-actions{
+  display:flex;
+  gap:12px;
+  margin-top:30px;
+}
+.btn{
+  border:1px solid #3b3a34;
+  background:#11120f;
+  padding:13px 20px;
+  border-radius:7px;
+  color:#eee;
+  cursor:pointer;
+}
+.btn-primary{
+  background:#c99758;
+  color:#111;
+  border-color:#c99758;
+  font-weight:bold;
+}
+.hero-note{
+  margin-top:20px;
+  color:#777;
+  font-size:12px;
+}
 
 .hero-art{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:10px;
-  transform:rotate(1deg)
+  gap:12px;
 }
-.hero-art img{
-  width:100%;
-  aspect-ratio:.72;
-  object-fit:cover;
-  border:1px solid var(--line);
-  background:#10100e
+.hero-card{
+  aspect-ratio:1;
+  border:1px solid #292a25;
+  border-radius:14px;
+  padding:20px;
+  display:flex;
+  align-items:end;
+  background:
+    radial-gradient(circle at 70% 20%,rgba(201,151,88,.25),transparent 35%),
+    linear-gradient(145deg,#151611,#090a09);
 }
-.hero-art img:nth-child(2){transform:translateY(25px)}
-.hero-art img:nth-child(3){transform:translateY(-17px)}
-.hero-art img:nth-child(4){transform:translateY(10px)}
+.hero-card:nth-child(2){
+  transform:translateY(30px);
+}
+.hero-card:nth-child(3){
+  transform:translateY(-20px);
+}
+.hero-card strong{
+  font-size:22px;
+}
 
 .trust{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  border:1px solid var(--line);
-  background:var(--panel);
-  margin-bottom:75px
+  border:1px solid #292a25;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:90px;
 }
 .trust-item{
-  padding:22px;
-  text-align:center;
-  border-right:1px solid var(--line)
+  padding:24px;
+  border-right:1px solid #292a25;
 }
 .trust-item:last-child{border-right:0}
-.trust strong{display:block;font-size:20px}
-.trust span{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+.trust-item strong{
+  display:block;
+  color:#c99758;
+  font-size:25px;
+}
+.trust-item span{
+  color:#777;
+  font-size:12px;
+}
 
-.section{padding:30px 0 90px}
+.section{
+  padding:70px 0;
+}
 .section-head{
-  max-width:700px;
-  margin:0 auto 35px;
-  text-align:center
+  margin-bottom:35px;
 }
-.section h2{
-  font-size:clamp(31px,5vw,48px);
-  line-height:1.03;
-  letter-spacing:-.045em;
-  margin:0
+.section-head h2{
+  font-size:45px;
+  letter-spacing:-2px;
+  margin-top:8px;
 }
-.section h2 span{color:var(--gold)}
-.section-head p{color:var(--muted);font-size:14px}
+.section-head h2 span{color:#c99758}
+.section-head p{
+  color:#777;
+  margin-top:8px;
+}
 
 .products{
   display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:12px
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
 }
 .card{
-  background:var(--panel);
-  border:1px solid var(--line);
+  background:#10110f;
+  border:1px solid #292a25;
+  border-radius:12px;
   overflow:hidden;
-  transition:.2s
+  transition:.25s;
 }
 .card:hover{
-  transform:translateY(-3px);
-  border-color:#685440
+  transform:translateY(-4px);
+  border-color:#4a463b;
 }
-.card-img{
-  aspect-ratio:.72;
-  background:#0d0d0b;
-  overflow:hidden
+.cover{
+  aspect-ratio:1.15;
+  padding:22px;
+  display:flex;
+  align-items:end;
+  background:
+    radial-gradient(circle at 70% 25%,rgba(201,151,88,.3),transparent 30%),
+    linear-gradient(145deg,#181914,#090a09);
 }
-.card-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover
+.cover small{
+  color:#c99758;
+  text-transform:uppercase;
+  letter-spacing:2px;
 }
-.card-body{padding:13px}
+.cover strong{
+  display:block;
+  font-size:25px;
+  line-height:1.05;
+  margin-top:7px;
+}
+.card-body{padding:18px}
 .card h3{
-  font-size:14px;
-  line-height:1.15;
-  margin:0;
-  min-height:33px
+  font-size:17px;
+  margin-bottom:5px;
 }
 .card p{
-  color:var(--muted);
-  font-size:10px;
-  min-height:43px;
-  margin:8px 0
+  color:#777;
+  font-size:12px;
+  min-height:38px;
 }
 .card-row{
+  margin-top:18px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  gap:7px
+  justify-content:space-between;
 }
 .price{
-  color:var(--gold);
-  font-size:17px;
-  font-weight:800
+  color:#c99758;
+  font-size:20px;
+  font-weight:bold;
 }
-.card-actions{display:flex;gap:5px}
 .small{
-  min-height:32px;
-  padding:0 9px;
-  font-size:10px;
-  border:1px solid var(--line);
-  background:var(--panel2);
-  color:#fff;
-  border-radius:2px
+  border:1px solid #383933;
+  background:#151612;
+  color:#eee;
+  border-radius:6px;
+  padding:8px 11px;
+  cursor:pointer;
 }
-.small.buy{
-  background:#6f5036;
-  border-color:#8e6b4c
+.buy{
+  background:#c99758;
+  border-color:#c99758;
+  color:#111;
+  margin-left:5px;
+  font-weight:bold;
 }
 
 .why{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:12px
+  gap:15px;
 }
 .why-card{
-  border:1px solid var(--line);
-  background:var(--panel);
-  padding:25px
+  border:1px solid #292a25;
+  padding:25px;
+  border-radius:10px;
 }
-.why-card .num{color:var(--gold);font-size:11px;letter-spacing:.1em}
-.why-card h3{font-size:17px;margin:20px 0 6px}
-.why-card p{font-size:12px;color:var(--muted);margin:0}
+.num{
+  color:#c99758;
+  font-size:12px;
+  margin-bottom:35px;
+}
+.why-card h3{margin-bottom:8px}
+.why-card p{
+  color:#777;
+  font-size:13px;
+}
 
-.faq{max-width:820px;margin:auto}
-.faq-item{border-top:1px solid var(--line)}
-.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq{
+  max-width:800px;
+}
+.faq-item{
+  border-bottom:1px solid #292a25;
+}
 .faq-q{
   width:100%;
-  background:none;
   border:0;
-  color:#fff;
+  background:none;
+  color:#eee;
   display:flex;
   justify-content:space-between;
-  text-align:left;
   padding:20px 0;
-  font-weight:700
+  cursor:pointer;
+  text-align:left;
 }
 .faq-a{
-  display:none;
-  color:var(--muted);
+  max-height:0;
+  overflow:hidden;
+  color:#777;
   font-size:13px;
-  padding:0 35px 20px 0
+  transition:.3s;
 }
-.faq-item.open .faq-a{display:block}
-
-.cta{
-  border:1px solid #4a3b2e;
-  background:#11100d;
-  padding:30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px
+.faq-item.open .faq-a{
+  max-height:100px;
+  padding-bottom:20px;
 }
-.cta h2{margin:0;font-size:30px}
-.cta p{margin:5px 0 0;color:var(--muted);font-size:12px}
 
 footer{
-  border-top:1px solid var(--line);
-  padding:50px 0 25px;
-  background:#080807
+  border-top:1px solid #292a25;
+  margin-top:60px;
+  padding:35px 0;
+  color:#666;
+  font-size:12px;
 }
-.footer-grid{
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1.4fr;
-  gap:40px
-}
-.footer-title{
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:.14em;
-  margin-bottom:13px
-}
-.footer-links{display:grid;gap:7px}
-.footer-links a,.footer-desc{
-  font-size:11px;
-  color:#817d75
-}
-.footer-bottom{
-  border-top:1px solid #171714;
-  margin-top:40px;
-  padding-top:18px;
+.footer-row{
   display:flex;
   justify-content:space-between;
-  color:#5f5b54;
-  font-size:10px
+  gap:20px;
+}
+.footer-links{
+  display:flex;
+  gap:18px;
 }
 
 .page{display:none}
 .page.active{display:block}
 
-.detail-wrap{padding:30px 0 80px}
-.crumb{font-size:11px;color:#706c65;margin-bottom:25px}
 .detail{
+  padding:90px 0;
+}
+.detail-grid{
   display:grid;
-  grid-template-columns:400px 1fr;
-  gap:55px
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
 }
-.detail-img{
-  border:1px solid var(--line);
-  background:#10100e
+.detail-cover{
+  min-height:500px;
+  border:1px solid #292a25;
+  border-radius:15px;
+  padding:40px;
+  display:flex;
+  align-items:end;
+  background:
+    radial-gradient(circle at 70% 20%,rgba(201,151,88,.3),transparent 35%),
+    linear-gradient(145deg,#181914,#090a09);
 }
-.detail-img img{
-  width:100%;
-  aspect-ratio:.72;
-  object-fit:cover
-}
-.detail-label{
-  font-size:10px;
-  text-transform:uppercase;
-  letter-spacing:.15em;
-  color:var(--gold)
+.detail-cover strong{
+  font-size:50px;
+  line-height:1;
 }
 .detail h1{
-  font-size:clamp(38px,5vw,64px);
-  line-height:.98;
-  letter-spacing:-.05em;
-  margin:8px 0 0
+  font-size:55px;
+  line-height:1;
+  margin:15px 0;
+}
+.detail-description{
+  color:#888;
+  margin:20px 0;
 }
 .detail-price{
-  font-size:28px;
-  color:var(--gold);
-  font-weight:800;
-  margin-top:20px
+  color:#c99758;
+  font-size:30px;
+  font-weight:bold;
 }
-.detail-copy{color:var(--muted);max-width:700px;margin-top:15px}
-.detail-actions{display:flex;gap:8px;margin-top:23px}
-.detail-list{
-  margin-top:32px;
-  border-top:1px solid var(--line)
-}
-.detail-list div{
+.detail-actions{
   display:flex;
-  justify-content:space-between;
-  padding:14px 0;
-  border-bottom:1px solid #1d1c19;
-  font-size:12px
+  gap:10px;
+  margin-top:25px;
 }
-.detail-list span{color:#77736b}
 
 .overlay{
-  display:none;
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,.7);
-  z-index:1500
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(8px);
+  z-index:500;
+  display:none;
 }
 .overlay.show{display:block}
 
 .cart{
   position:fixed;
-  z-index:1600;
   right:0;
   top:0;
   height:100%;
-  width:min(430px,100%);
-  background:#0c0c0a;
-  border-left:1px solid var(--line);
+  width:min(440px,94%);
+  background:#10110f;
+  border-left:1px solid #33342f;
+  z-index:501;
   transform:translateX(100%);
-  transition:.28s;
-  display:flex;
-  flex-direction:column
+  transition:.3s;
+  padding:25px;
+  overflow:auto;
 }
 .cart.open{transform:translateX(0)}
 .cart-head{
   display:flex;
   justify-content:space-between;
-  padding:20px;
-  border-bottom:1px solid var(--line)
+  align-items:center;
+  margin-bottom:25px;
 }
-.cart-head h2{margin:0;font-size:20px}
 .close{
-  width:34px;
-  height:34px;
-  border:1px solid var(--line);
-  background:#141411;
-  color:#fff
-}
-.cart-items{flex:1;overflow:auto;padding:15px}
-.cart-item{
-  display:grid;
-  grid-template-columns:60px 1fr auto;
-  gap:10px;
-  padding:11px 0;
-  border-bottom:1px solid #1d1c19;
-  align-items:center
-}
-.cart-item img{
-  width:60px;
-  height:78px;
-  object-fit:cover;
-  border:1px solid var(--line)
-}
-.cart-item-name{font-size:12px;font-weight:700}
-.cart-item-price{font-size:11px;color:var(--gold);margin-top:3px}
-.remove{
   background:none;
   border:0;
-  color:#77736b;
-  font-size:10px
+  color:#aaa;
+  font-size:25px;
+  cursor:pointer;
 }
-.cart-foot{
-  border-top:1px solid var(--line);
-  padding:18px
-}
-.total{
-  display:flex;
-  justify-content:space-between;
-  font-weight:800;
-  margin-bottom:12px
-}
-.full{width:100%}
-
-.checkout-modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  z-index:2200;
-  background:rgba(0,0,0,.8);
-  align-items:center;
-  justify-content:center;
-  padding:18px
-}
-.checkout-modal.active{display:flex}
-.checkout-box{
-  position:relative;
-  width:min(430px,100%);
-  max-height:90vh;
-  overflow:auto;
-  background:#0c0c0a;
-  border:1px solid var(--line);
-  padding:26px
-}
-.checkout-box h2{margin:0;font-size:24px}
-.checkout-box>p{
-  margin:7px 0 0;
-  color:var(--muted);
-  font-size:12px
-}
-.checkout-close{
-  position:absolute;
-  right:14px;
-  top:14px;
-  width:34px;
-  height:34px;
-  border:1px solid var(--line);
-  background:#141411;
-  color:#fff;
-  font-size:22px
-}
-.checkout-product{
+.cart-item{
   display:flex;
   align-items:center;
   gap:12px;
-  margin-top:18px;
-  padding:10px;
-  border:1px solid #1d1c19;
-  background:#11110f
+  border-bottom:1px solid #292a25;
+  padding:15px 0;
 }
-.checkout-product img{
-  width:52px;
-  height:68px;
-  object-fit:cover
+.cart-item-info{flex:1}
+.cart-item-name{font-size:14px}
+.cart-item-price{color:#c99758}
+.remove{
+  background:none;
+  border:0;
+  color:#777;
+  cursor:pointer;
+  font-size:11px;
 }
-.checkout-product div{
-  display:grid;
-  gap:3px
+.cart-total{
+  display:flex;
+  justify-content:space-between;
+  margin:25px 0;
+  font-size:18px;
 }
-.checkout-product span{
-  color:var(--gold);
-  font-weight:800
+.checkout-note{
+  color:#777;
+  font-size:11px;
+  margin-top:12px;
+}
+
+.payment-modal{
+  position:fixed;
+  inset:0;
+  z-index:700;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,.82);
+  backdrop-filter:blur(10px);
+  padding:20px;
+}
+.payment-modal.show{display:flex}
+.payment-box{
+  width:min(460px,100%);
+  background:#11120f;
+  border:1px solid #393a34;
+  border-radius:15px;
+  padding:28px;
+  max-height:90vh;
+  overflow:auto;
+}
+.payment-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:start;
+  margin-bottom:20px;
+}
+.payment-product{
+  border:1px solid #292a25;
+  padding:15px;
+  border-radius:9px;
+  margin-bottom:20px;
+}
+.payment-product strong{
+  display:block;
+}
+.payment-product span{
+  color:#c99758;
+}
+.payment-title{
+  font-size:25px;
+}
+.payment-sub{
+  color:#777;
+  font-size:12px;
+  margin-top:4px;
+}
+#razorpayButtonContainer{
+  min-height:70px;
+}
+#razorpayButtonContainer form{
+  width:100%;
 }
 
 .toast{
   position:fixed;
   left:50%;
-  bottom:22px;
-  transform:translate(-50%,80px);
+  bottom:25px;
+  transform:translate(-50%,20px);
+  background:#eee;
+  color:#111;
+  padding:11px 18px;
+  border-radius:7px;
+  font-size:13px;
   opacity:0;
-  z-index:3000;
-  background:#151512;
-  border:1px solid #5a4937;
-  padding:11px 16px;
-  font-size:11px;
-  transition:.25s
+  pointer-events:none;
+  transition:.25s;
+  z-index:1000;
 }
 .toast.show{
+  opacity:1;
   transform:translate(-50%,0);
-  opacity:1
 }
 
 .legal{
-  padding:70px 0;
-  min-height:60vh
+  padding:90px 0;
+  max-width:800px;
 }
-.legal-box{
-  max-width:850px;
-  margin:auto;
-  border:1px solid var(--line);
-  background:var(--panel);
-  padding:30px
+.legal h1{
+  font-size:45px;
+  margin-bottom:20px;
 }
-.legal-box h1{margin-top:0}
-.legal-box p{color:var(--muted);font-size:13px;line-height:1.8}
+.legal p{
+  color:#888;
+}
 
-@media(max-width:1100px){
-  .products{grid-template-columns:repeat(3,1fr)}
-  .hero{grid-template-columns:1fr}
-  .hero-art{max-width:620px;margin:auto}
+@media(max-width:900px){
+  .products{grid-template-columns:repeat(2,1fr)}
   .why{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:760px){
-  .nav{display:none}
-  .header-inner{min-height:64px}
-  .hero{padding:50px 0}
-  .hero h1{font-size:46px}
-  .trust{grid-template-columns:1fr 1fr}
+  .hero,.detail-grid{grid-template-columns:1fr}
+  .trust{grid-template-columns:repeat(2,1fr)}
   .trust-item:nth-child(2){border-right:0}
-  .trust-item:nth-child(3){border-top:1px solid var(--line)}
-  .trust-item:nth-child(4){
-    border-top:1px solid var(--line);
-    border-right:0
-  }
-  .products{grid-template-columns:1fr 1fr}
-  .detail{grid-template-columns:1fr;gap:30px}
-  .detail-img{max-width:410px}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .cta{align-items:flex-start;flex-direction:column}
+  .trust-item:nth-child(3){border-top:1px solid #292a25}
+  .trust-item:nth-child(4){border-top:1px solid #292a25}
+  .nav-links{display:none}
 }
-@media(max-width:480px){
-  .container{width:calc(100% - 22px)}
-  .products{gap:8px}
-  .card-body{padding:10px}
-  .card h3{font-size:13px}
-  .card p{font-size:9px}
-  .card-actions .small:first-child{display:none}
-  .hero-art{gap:6px}
+
+@media(max-width:560px){
+  .products{grid-template-columns:1fr}
   .why{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .footer-bottom{flex-direction:column;gap:8px}
-  .header-right .btn-primary{display:none}
+  .hero{padding:60px 0}
+  .hero h1{font-size:48px}
+  .detail h1{font-size:40px}
+  .trust{grid-template-columns:1fr 1fr}
+  .footer-row{flex-direction:column}
+  .footer-links{flex-wrap:wrap}
 }
 </style>
 </head>
 
 <body>
 
-<header class="header">
-  <div class="container header-inner">
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">REEL<span>BUNDLES</span></a>
 
-    <a class="brand" href="#home">
-      <div class="brand-mark">RB</div>
-      <div>
-        <div class="brand-title">REEL BUNDLES</div>
-        <div class="brand-sub">PREMIUM CONTENT COLLECTION</div>
-      </div>
-    </a>
-
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
+    <nav class="nav-links">
+      <a href="#products">Bundles</a>
       <a href="#why">Why Us</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
     </nav>
 
-    <div class="header-right">
-      <button class="btn cart-btn" onclick="openCart()">
-        Cart
-        <span class="cart-count" id="cartCount">0</span>
-      </button>
-    </div>
-
+    <button class="cart-btn" onclick="openCart()">
+      Cart <span class="cart-count" id="cartCount">0</span>
+    </button>
   </div>
 </header>
 
 <main id="home" class="page active">
 
 <section class="hero container">
-
   <div>
-    <div class="eyebrow">PREMIUM DIGITAL CONTENT</div>
+    <div class="eyebrow">Premium content collection</div>
 
     <h1>
-      Content built for
-      <span>creators.</span>
+      Premium Reel Bundles
+      <em>Built for creators.</em>
     </h1>
 
     <p>
-      Ready-to-use reel collections for creators, theme pages and
-      social media businesses. Pick a niche and start publishing.
+      Curated digital content collections for theme pages, editors and creators.
+      Choose your niche and get the collection you need.
     </p>
 
     <div class="hero-actions">
-      <a href="#products" class="btn btn-primary">Explore Bundles</a>
-      <a href="#faq" class="btn">How It Works</a>
+      <a class="btn btn-primary" href="#products">Explore Bundles</a>
+      <a class="btn" href="#why">How It Works</a>
     </div>
 
     <div class="hero-note">
@@ -624,236 +599,197 @@ footer{
     </div>
   </div>
 
-  <div class="hero-art" id="heroArt"></div>
+  <div class="hero-art">
+    <div class="hero-card">
+      <div>
+        <small>Collection 01</small>
+        <strong>4K Hollywood</strong>
+      </div>
+    </div>
 
+    <div class="hero-card">
+      <div>
+        <small>Collection 02</small>
+        <strong>Anime Edits</strong>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div>
+        <small>Collection 03</small>
+        <strong>Luxury</strong>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div>
+        <small>Collection 04</small>
+        <strong>AI Tech</strong>
+      </div>
+    </div>
+  </div>
 </section>
 
 <div class="container">
-
   <div class="trust">
     <div class="trust-item">
       <strong>11</strong>
       <span>Niche Collections</span>
     </div>
-
     <div class="trust-item">
       <strong>₹29</strong>
       <span>Per Bundle</span>
     </div>
-
+    <div class="trust-item">
+      <strong>1-Time</strong>
+      <span>Payment</span>
+    </div>
     <div class="trust-item">
       <strong>Direct</strong>
       <span>Access After Payment</span>
     </div>
-
-    <div class="trust-item">
-      <strong>Razorpay</strong>
-      <span>Secure Checkout</span>
-    </div>
   </div>
-
 </div>
 
-<section id="products" class="section container">
+<section class="section" id="products">
+  <div class="container">
 
-  <div class="section-head">
-    <div class="kicker">THE COLLECTION</div>
+    <div class="section-head">
+      <div class="kicker">The collection</div>
+      <h2>Choose your <span>bundle.</span></h2>
+      <p>Every listed product is ₹29.</p>
+    </div>
 
-    <h2>
-      Choose your <span>bundle.</span>
-    </h2>
+    <div class="products" id="productsGrid"></div>
 
-    <p>
-      Each product below is ₹29. Open a product for the full
-      details or purchase a bundle directly.
-    </p>
   </div>
-
-  <div class="products" id="productsGrid"></div>
-
 </section>
 
-<section id="why" class="section container">
+<section class="section" id="why">
+  <div class="container">
 
-  <div class="section-head">
-    <div class="kicker">WHY REEL BUNDLES</div>
+    <div class="section-head">
+      <div class="kicker">Why Reel Bundles</div>
+      <h2>Simple by <span>design.</span></h2>
+      <p>Pick a niche, pay once and access the collection.</p>
+    </div>
 
-    <h2>
-      Simple by <span>design.</span>
-    </h2>
+    <div class="why">
 
-    <p>
-      No complicated pricing structure. Pick what you need and check out.
-    </p>
+      <article class="why-card">
+        <div class="num">01</div>
+        <h3>Niche focused</h3>
+        <p>Collections are organised around specific content categories.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="num">02</div>
+        <h3>₹29 each</h3>
+        <p>Every listed bundle has one straightforward price.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="num">03</div>
+        <h3>Razorpay</h3>
+        <p>Payments are processed through Razorpay's checkout.</p>
+      </article>
+
+      <article class="why-card">
+        <div class="num">04</div>
+        <h3>Direct access</h3>
+        <p>After successful payment, Razorpay redirects you to the configured access link.</p>
+      </article>
+
+    </div>
   </div>
-
-  <div class="why">
-
-    <div class="why-card">
-      <div class="num">01</div>
-      <h3>Niche focused</h3>
-      <p>
-        Collections are organised around specific content categories
-        so you can find relevant material faster.
-      </p>
-    </div>
-
-    <div class="why-card">
-      <div class="num">02</div>
-      <h3>Low entry price</h3>
-      <p>
-        Every bundle is ₹29, making it easy to test a content category
-        without a large upfront cost.
-      </p>
-    </div>
-
-    <div class="why-card">
-      <div class="num">03</div>
-      <h3>Simple checkout</h3>
-      <p>
-        Select a bundle, use Razorpay checkout and complete your payment.
-      </p>
-    </div>
-
-    <div class="why-card">
-      <div class="num">04</div>
-      <h3>Direct access</h3>
-      <p>
-        After successful payment, Razorpay redirects you to the access
-        link configured for that bundle.
-      </p>
-    </div>
-
-  </div>
-
 </section>
 
-<section id="faq" class="section container">
+<section class="section" id="faq">
+  <div class="container">
 
-  <div class="section-head">
-    <div class="kicker">FAQ</div>
-    <h2>Questions, <span>answered.</span></h2>
+    <div class="section-head">
+      <div class="kicker">Questions</div>
+      <h2>Frequently <span>asked.</span></h2>
+    </div>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How much does each bundle cost?
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          Every listed Reel Bundle costs ₹29.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          How will I receive my purchase?
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          After a successful payment, you'll be redirected to the access link configured for the bundle you purchased.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Which payment provider do you use?
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          Payments are processed through Razorpay.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Can I buy more than one bundle?
+          <span>+</span>
+        </button>
+        <div class="faq-a">
+          Yes. Each bundle has its own Razorpay Payment Button and checkout.
+        </div>
+      </div>
+
+    </div>
   </div>
-
-  <div class="faq">
-
-    <div class="faq-item">
-      <button class="faq-q">
-        How much does each bundle cost?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Every listed bundle costs ₹29.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q">
-        How will I receive my purchase?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        After a successful payment, you'll be redirected to the access
-        link for the bundle you purchased.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q">
-        Which payment method is used?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Payments are handled through Razorpay.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q">
-        Can I buy multiple bundles?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Yes. Purchase bundles individually because each collection uses
-        its own Razorpay Payment Button.
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-q">
-        Do you provide refunds?
-        <span>+</span>
-      </button>
-      <div class="faq-a">
-        Please review the Refund Policy before purchasing.
-      </div>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="contact" class="section container">
-
-  <div class="cta">
-    <div>
-      <h2>Ready to create?</h2>
-      <p>Choose your content collection and get started.</p>
-    </div>
-
-    <a href="#products" class="btn btn-primary">
-      Browse Bundles
-    </a>
-  </div>
-
 </section>
 
 </main>
 
-<main id="productPage" class="page">
+<!-- PRODUCT DETAIL PAGE -->
 
-  <div class="container detail-wrap">
+<section id="productPage" class="page">
+  <div class="container detail">
 
-    <div class="crumb">
-      <a href="#products">Products</a> / <span id="detailCrumb"></span>
-    </div>
+    <div class="detail-grid">
 
-    <div class="detail">
-
-      <div class="detail-img">
-        <img id="detailImage" src="" alt="">
+      <div class="detail-cover">
+        <div>
+          <div class="kicker" id="detailCount">CONTENT</div>
+          <strong id="detailTitle">Bundle</strong>
+        </div>
       </div>
 
       <div>
+        <div class="kicker">Reel Bundle</div>
+        <h1 id="detailTitleText"></h1>
 
-        <div class="detail-label" id="detailCount"></div>
-
-        <h1 id="detailTitle"></h1>
+        <p class="detail-description" id="detailDescription"></p>
 
         <div class="detail-price">₹29</div>
 
-        <p class="detail-copy" id="detailDescription"></p>
-
         <div class="detail-actions">
-          <button class="btn" id="detailAdd">Add to Cart</button>
-          <button class="btn btn-primary" id="detailBuy">Buy Now</button>
-        </div>
+          <button class="btn btn-primary" id="detailBuy">
+            Buy Now
+          </button>
 
-        <div class="detail-list">
-          <div>
-            <span>Price</span>
-            <strong>₹29</strong>
-          </div>
-
-          <div>
-            <span>Payment</span>
-            <strong>Razorpay</strong>
-          </div>
-
-          <div>
-            <span>Delivery</span>
-            <strong>Redirect after payment</strong>
-          </div>
+          <button class="btn" id="detailAdd">
+            Add to Cart
+          </button>
         </div>
 
       </div>
@@ -861,81 +797,32 @@ footer{
     </div>
 
   </div>
+</section>
 
-</main>
+<!-- LEGAL PAGE -->
 
-<main id="legalPage" class="page">
-
+<section id="legalPage" class="page">
   <div class="container legal">
-
-    <div class="legal-box">
-      <h1 id="legalTitle"></h1>
-      <p id="legalText"></p>
-    </div>
-
+    <div class="kicker">Reel Bundles</div>
+    <h1 id="legalTitle"></h1>
+    <p id="legalText"></p>
   </div>
-
-</main>
+</section>
 
 <footer>
+  <div class="container footer-row">
+    <div>© 2026 Reel Bundles. All rights reserved.</div>
 
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-        <div class="brand">
-          <div class="brand-mark">RB</div>
-          <div>
-            <div class="brand-title">REEL BUNDLES</div>
-            <div class="brand-sub">PREMIUM CONTENT COLLECTION</div>
-          </div>
-        </div>
-
-        <p class="footer-desc">
-          Premium digital reel collections for creators and social
-          media businesses.
-        </p>
-      </div>
-
-      <div>
-        <div class="footer-title">Explore</div>
-        <div class="footer-links">
-          <a href="#products">Products</a>
-          <a href="#why">Why Us</a>
-          <a href="#faq">FAQ</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="footer-title">Legal</div>
-        <div class="footer-links">
-          <a href="#terms">Terms</a>
-          <a href="#privacy">Privacy</a>
-          <a href="#refund">Refunds</a>
-          <a href="#dmca">Copyright / DMCA</a>
-        </div>
-      </div>
-
-      <div>
-        <div class="footer-title">Contact</div>
-        <div class="footer-links">
-          <a href="mailto:reelbundles.contact@gmail.com">
-            reelbundles.contact@gmail.com
-          </a>
-        </div>
-      </div>
-
+    <div class="footer-links">
+      <a href="#terms">Terms</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#refund">Refund</a>
+      <a href="#dmca">Copyright / DMCA</a>
     </div>
-
-    <div class="footer-bottom">
-      <span>© 2026 Reel Bundles</span>
-      <span>Premium digital content collection</span>
-    </div>
-
   </div>
-
 </footer>
+
+<!-- CART -->
 
 <div class="overlay" id="overlay" onclick="closeCart()"></div>
 
@@ -946,52 +833,39 @@ footer{
     <button class="close" onclick="closeCart()">×</button>
   </div>
 
-  <div class="cart-items" id="cartItems"></div>
+  <div id="cartItems"></div>
 
-  <div class="cart-foot">
-
-    <div class="total">
-      <span>Total</span>
-      <span id="cartTotal">₹0</span>
-    </div>
-
-    <p style="font-size:11px;color:#77736b;margin:0 0 10px">
-      Each bundle uses its own Razorpay Payment Button.
-      Purchase one bundle at a time.
-    </p>
-
-    <button class="btn btn-primary full" onclick="checkout()">
-      Continue to Secure Checkout
-    </button>
-
+  <div class="cart-total">
+    <strong>Total</strong>
+    <strong id="cartTotal">₹0</strong>
   </div>
+
+  <p class="checkout-note">
+    Each product uses its own Razorpay Payment Button. Select a product below to complete payment.
+  </p>
 
 </aside>
 
-<div class="checkout-modal" id="checkoutModal">
+<!-- RAZORPAY PAYMENT MODAL -->
 
-  <div class="checkout-box">
+<div class="payment-modal" id="paymentModal">
 
-    <button
-      class="checkout-close"
-      onclick="closeCheckoutModal()"
-      aria-label="Close"
-    >
-      ×
-    </button>
+  <div class="payment-box">
 
-    <h2 id="paymentTitle">Secure Checkout</h2>
+    <div class="payment-head">
+      <div>
+        <div class="payment-title">Secure Checkout</div>
+        <div class="payment-sub">
+          Complete your ₹29 payment below.
+        </div>
+      </div>
 
-    <p id="paymentDescription">
-      Complete your ₹29 payment below.
-    </p>
+      <button class="close" onclick="closePayment()">×</button>
+    </div>
 
-    <div class="checkout-product" id="checkoutProduct"></div>
+    <div class="payment-product" id="paymentProduct"></div>
 
-    <div
-      id="razorpayButtonContainer"
-      style="margin-top:20px;min-height:55px"
-    ></div>
+    <div id="razorpayButtonContainer"></div>
 
   </div>
 
@@ -1005,323 +879,181 @@ const PRODUCTS = [
 
   {
     id:"hollywood-4k",
-    paymentButtonId:"pl_TjlTuLdsdGGmuE",
     name:"4K Hollywood",
-    short:"Hollywood-focused 4K reel collection.",
-    count:"1000+",
-    theme:"HOLLYWOOD"
+    count:"4K",
+    short:"Hollywood-focused reel collection.",
+    paymentButtonId:"pl_TjlTuLdsdGGmuE"
   },
 
   {
     id:"anime-edits",
-    paymentButtonId:"pl_TjlXIyQox3b4LP",
     name:"20,000+ Anime Edits",
-    short:"Anime edits and clips for short-form content.",
     count:"20,000+",
-    theme:"ANIME"
+    short:"Anime edits and short-form content.",
+    paymentButtonId:"pl_TjlXIyQox3b4LP"
   },
 
   {
     id:"luxury",
-    paymentButtonId:"pl_TjlajQbh5B0n2l",
     name:"20K+ Luxury",
-    short:"Cars, money, yachts, villas and lifestyle.",
     count:"20K+",
-    theme:"LUXURY"
+    short:"Luxury lifestyle and success reels.",
+    paymentButtonId:"pl_TjlajQbh5B0n2l"
   },
 
   {
     id:"car-crash",
-    paymentButtonId:"pl_TjldGfR7W0DL5j",
     name:"500+ HD Car Crash",
-    short:"High-definition car crash and automotive-impact content.",
     count:"500+",
-    theme:"CAR CRASH"
+    short:"HD car crash and automotive clips.",
+    paymentButtonId:"pl_TjldGfR7W0DL5j"
   },
 
   {
     id:"3d-facts",
-    paymentButtonId:"pl_Tjlg6j8LrmNecU",
     name:"1000+ 3D Viral Facts",
-    short:"Animated 3D facts for social content.",
     count:"1000+",
-    theme:"3D FACTS"
+    short:"3D viral facts and educational visuals.",
+    paymentButtonId:"pl_Tjlg6j8LrmNecU"
   },
 
   {
     id:"glow",
-    paymentButtonId:"pl_TjliQ99b4h918I",
     name:"2200+ Glow Animated",
-    short:"Facts, motivation and animated captions.",
     count:"2200+",
-    theme:"GLOW"
+    short:"Animated glow visuals and motion content.",
+    paymentButtonId:"pl_TjliQ99b4h918I"
   },
 
   {
     id:"stickman",
-    paymentButtonId:"pl_TjlriJubTLCN1y",
     name:"2200+ Stickman",
-    short:"Funny animated stickman reels.",
     count:"2200+",
-    theme:"STICKMAN"
+    short:"Stickman animation reels.",
+    paymentButtonId:"pl_TjlriJubTLCN1y"
   },
 
   {
     id:"mixed",
-    paymentButtonId:"pl_TjlugnJR92HAkG",
     name:"2700+ Mixed Content",
-    short:"Money, business, motivation and creator content.",
     count:"2700+",
-    theme:"MIXED"
+    short:"Motivation, business, forex, health, quotes and more.",
+    paymentButtonId:"pl_TjlugnJR92HAkG"
   },
 
   {
     id:"ai-tech",
-    paymentButtonId:"pl_TjlwlVi8JcgzA9",
     name:"AI Tech",
-    short:"AI tools, tutorials and new technology.",
-    count:"COLLECTION",
-    theme:"AI TECH"
+    count:"AI",
+    short:"AI and technology themed reels.",
+    paymentButtonId:"pl_TjlwlVi8JcgzA9"
   },
 
   {
     id:"cars",
-    paymentButtonId:"pl_TjlzKNNLf2cdX8",
-    name:"Cars",
-    short:"Luxury cars, speed and automotive content.",
-    count:"COLLECTION",
-    theme:"CARS"
+    name:"Luxury Cars",
+    count:"CARS",
+    short:"Luxury car reels and automotive visuals.",
+    paymentButtonId:"pl_TjlzKNNLf2cdX8"
   },
 
   {
     id:"game-reels",
-    paymentButtonId:"pl_Tjm1aBKU7p8eWg",
     name:"Game Reels",
-    short:"2D and 3D gaming and car gameplay.",
-    count:"COLLECTION",
-    theme:"GAME REELS"
+    count:"GAMING",
+    short:"Gaming and car-game reel content.",
+    paymentButtonId:"pl_Tjm1aBKU7p8eWg"
   }
 
 ];
 
 const $ = id => document.getElementById(id);
 
-function cover(theme){
+let cart = JSON.parse(localStorage.getItem("rb_cart") || "[]");
+let selectedProduct = null;
+let toastTimer = null;
 
-  const safe = String(theme)
+
+/* PRODUCTS */
+
+function renderProducts(){
+
+  $("productsGrid").innerHTML = PRODUCTS.map(p => `
+
+    <article class="card">
+
+      <a href="#product/${p.id}">
+
+        <div class="cover">
+
+          <div>
+            <small>${p.count}</small>
+            <strong>${escapeHTML(p.name)}</strong>
+          </div>
+
+        </div>
+
+      </a>
+
+      <div class="card-body">
+
+        <h3>${escapeHTML(p.name)}</h3>
+
+        <p>${escapeHTML(p.short)}</p>
+
+        <div class="card-row">
+
+          <span class="price">₹29</span>
+
+          <div>
+
+            <button
+              class="small"
+              onclick="viewProduct('${p.id}')">
+              View
+            </button>
+
+            <button
+              class="small buy"
+              onclick="buyProduct('${p.id}')">
+              Buy
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  `).join("");
+
+}
+
+
+/* ESCAPE */
+
+function escapeHTML(value){
+
+  return String(value)
     .replace(/&/g,"&amp;")
     .replace(/</g,"&lt;")
     .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;");
-
-  const svg = `
-  <svg xmlns="http://www.w3.org/2000/svg"
-       width="800"
-       height="1100"
-       viewBox="0 0 800 1100">
-
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#171512"/>
-        <stop offset=".55" stop-color="#0c0c0b"/>
-        <stop offset="1" stop-color="#2a2017"/>
-      </linearGradient>
-      <radialGradient id="r">
-        <stop offset="0" stop-color="#d0ad83" stop-opacity=".28"/>
-        <stop offset="1" stop-color="#d0ad83" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-
-    <rect width="800" height="1100" fill="url(#g)"/>
-    <circle cx="650" cy="180" r="330" fill="url(#r)"/>
-
-    <rect x="45" y="45" width="710" height="1010"
-          fill="none"
-          stroke="#6f604f"
-          stroke-opacity=".45"/>
-
-    <text x="65" y="105"
-          fill="#d0ad83"
-          font-family="Arial,sans-serif"
-          font-size="24"
-          letter-spacing="7">
-      REEL BUNDLES
-    </text>
-
-    <text x="65" y="830"
-          fill="#f2eee7"
-          font-family="Arial,sans-serif"
-          font-size="58"
-          font-weight="700">
-      ${safe}
-    </text>
-
-    <text x="65" y="890"
-          fill="#9b978f"
-          font-family="Arial,sans-serif"
-          font-size="23"
-          letter-spacing="4">
-      PREMIUM CONTENT
-    </text>
-
-    <line x1="65" y1="945" x2="735" y2="945"
-          stroke="#6f604f"/>
-
-    <text x="65" y="995"
-          fill="#d0ad83"
-          font-family="Arial,sans-serif"
-          font-size="22">
-      ₹29
-    </text>
-
-  </svg>`;
-
-  return "data:image/svg+xml;charset=UTF-8," +
-    encodeURIComponent(svg);
-}
-
-PRODUCTS.forEach(p => p.image = cover(p.theme));
-
-function render(){
-
-  const grid = $("productsGrid");
-
-  if(!grid){
-    console.error("productsGrid not found");
-    return;
-  }
-
-  grid.innerHTML = "";
-
-  PRODUCTS.forEach((p,index) => {
-
-    const article = document.createElement("article");
-    article.className = "card";
-
-    const link = document.createElement("a");
-    link.href = "#product/" + p.id;
-
-    const imageBox = document.createElement("div");
-    imageBox.className = "card-img";
-
-    const image = document.createElement("img");
-    image.src = p.image;
-    image.alt = p.name + " product cover";
-    image.loading = index < 4 ? "eager" : "lazy";
-
-    imageBox.appendChild(image);
-    link.appendChild(imageBox);
-
-    const body = document.createElement("div");
-    body.className = "card-body";
-
-    const titleLink = document.createElement("a");
-    titleLink.href = "#product/" + p.id;
-
-    const title = document.createElement("h3");
-    title.textContent = p.name;
-
-    titleLink.appendChild(title);
-
-    const description = document.createElement("p");
-    description.textContent = p.short;
-
-    const row = document.createElement("div");
-    row.className = "card-row";
-
-    const price = document.createElement("span");
-    price.className = "price";
-    price.textContent = "₹29";
-
-    const actions = document.createElement("div");
-    actions.className = "card-actions";
-
-    const view = document.createElement("button");
-    view.className = "small";
-    view.type = "button";
-    view.textContent = "View";
-    view.onclick = () => viewProduct(p.id);
-
-    const buy = document.createElement("button");
-    buy.className = "small buy";
-    buy.type = "button";
-    buy.textContent = "Buy";
-    buy.onclick = () => buyProduct(p.id);
-
-    actions.appendChild(view);
-    actions.appendChild(buy);
-
-    row.appendChild(price);
-    row.appendChild(actions);
-
-    body.appendChild(titleLink);
-    body.appendChild(description);
-    body.appendChild(row);
-
-    article.appendChild(link);
-    article.appendChild(body);
-
-    grid.appendChild(article);
-
-  });
-
-  const hero = $("heroArt");
-
-  if(hero){
-
-    hero.innerHTML = "";
-
-    PRODUCTS.slice(0,4).forEach((p,index) => {
-
-      const img = document.createElement("img");
-
-      img.src = p.image;
-      img.alt = p.name;
-      img.loading = "eager";
-
-      hero.appendChild(img);
-
-    });
-
-  }
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
 
 }
 
-let cart = [];
 
-try{
-  cart = JSON.parse(localStorage.getItem("rb_cart") || "[]");
-  if(!Array.isArray(cart)) cart = [];
-}catch(e){
-  cart = [];
-}
+/* CART */
 
 function saveCart(){
-  localStorage.setItem("rb_cart",JSON.stringify(cart));
-}
 
-function addToCart(id){
-
-  if(!PRODUCTS.some(p => p.id === id)) return;
-
-  if(cart.includes(id)){
-    toast("Already in your cart");
-    return;
-  }
-
-  cart.push(id);
-  saveCart();
-  updateCart();
-  toast("Added to cart");
-
-}
-
-function removeFromCart(id){
-
-  cart = cart.filter(x => x !== id);
-
-  saveCart();
-  updateCart();
+  localStorage.setItem(
+    "rb_cart",
+    JSON.stringify(cart)
+  );
 
 }
 
@@ -1331,8 +1063,15 @@ function updateCart(){
 
   if(!cart.length){
 
-    $("cartItems").innerHTML =
-      '<div style="padding:70px 20px;text-align:center;color:#77736b">Your cart is empty.</div>';
+    $("cartItems").innerHTML = `
+      <div style="
+        padding:60px 10px;
+        text-align:center;
+        color:#777;
+      ">
+        Your cart is empty.
+      </div>
+    `;
 
     $("cartTotal").textContent = "₹0";
 
@@ -1347,13 +1086,19 @@ function updateCart(){
     if(!p) return "";
 
     return `
+
       <div class="cart-item">
 
-        <img src="${p.image}" alt="">
+        <div class="cart-item-info">
 
-        <div>
-          <div class="cart-item-name">${p.name}</div>
-          <div class="cart-item-price">₹29</div>
+          <div class="cart-item-name">
+            ${escapeHTML(p.name)}
+          </div>
+
+          <div class="cart-item-price">
+            ₹29
+          </div>
+
         </div>
 
         <button
@@ -1363,11 +1108,46 @@ function updateCart(){
         </button>
 
       </div>
+
     `;
 
   }).join("");
 
-  $("cartTotal").textContent = "₹" + (cart.length * 29);
+  $("cartTotal").textContent =
+    "₹" + (cart.length * 29);
+
+}
+
+function addToCart(id){
+
+  if(!PRODUCTS.some(p => p.id === id))
+    return;
+
+  if(!cart.includes(id)){
+
+    cart.push(id);
+
+    saveCart();
+
+    updateCart();
+
+    toast("Added to cart");
+
+  }else{
+
+    toast("Already in your cart");
+
+  }
+
+}
+
+function removeFromCart(id){
+
+  cart = cart.filter(x => x !== id);
+
+  saveCart();
+
+  updateCart();
 
 }
 
@@ -1376,6 +1156,7 @@ function openCart(){
   updateCart();
 
   $("overlay").classList.add("show");
+
   $("cart").classList.add("open");
 
 }
@@ -1383,224 +1164,73 @@ function openCart(){
 function closeCart(){
 
   $("overlay").classList.remove("show");
+
   $("cart").classList.remove("open");
 
 }
 
-function viewProduct(id){
 
-  location.hash = "product/" + id;
+/* RAZORPAY PAYMENT BUTTON */
 
-}
+function buyProduct(id){
 
-function showProduct(id){
+  const product =
+    PRODUCTS.find(p => p.id === id);
 
-  const p = PRODUCTS.find(x => x.id === id);
+  if(!product){
 
-  if(!p){
-    location.hash = "#products";
-    return;
-  }
+    toast("Product unavailable");
 
-  document.querySelectorAll(".page")
-    .forEach(x => x.classList.remove("active"));
-
-  $("productPage").classList.add("active");
-
-  $("detailImage").src = p.image;
-  $("detailImage").alt = p.name;
-
-  $("detailCrumb").textContent = p.name;
-  $("detailCount").textContent = p.count + " CONTENT";
-  $("detailTitle").textContent = p.name;
-  $("detailDescription").textContent = p.short;
-
-  $("detailAdd").onclick = () => addToCart(p.id);
-  $("detailBuy").onclick = () => buyProduct(p.id);
-
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
-  });
-
-}
-
-function legal(type){
-
-  const data = {
-
-    terms:[
-      "Terms & Conditions",
-      "Digital products are accessed electronically through the purchase redirect after successful payment. Customers are responsible for complying with applicable copyright, licensing and platform requirements. Purchasing access does not transfer ownership of third-party intellectual property."
-    ],
-
-    privacy:[
-      "Privacy Policy",
-      "Payment details are handled by Razorpay. This site does not intentionally store complete card or UPI credentials. Any contact information requested by Razorpay is handled according to Razorpay’s own privacy practices and is not used by this site to deliver the purchased files by email."
-    ],
-
-    refund:[
-      "Refund Policy",
-      "Digital purchases are intended to provide access to the selected collection after successful payment. Please contact Reel Bundles support if you experience a genuine access problem."
-    ],
-
-    dmca:[
-      "Copyright / DMCA",
-      "For copyright concerns regarding material distributed through the service, contact the store with enough information to identify the material and explain the claimed rights."
-    ]
-
-  };
-
-  const item = data[type];
-
-  if(!item) return;
-
-  document.querySelectorAll(".page")
-    .forEach(x => x.classList.remove("active"));
-
-  $("legalPage").classList.add("active");
-
-  $("legalTitle").textContent = item[0];
-  $("legalText").textContent = item[1];
-
-  window.scrollTo({
-    top:0,
-    behavior:"smooth"
-  });
-
-}
-
-function route(){
-
-  const h = location.hash || "#home";
-
-  if(h.startsWith("#product/")){
-
-    showProduct(h.slice(9));
     return;
 
   }
+
+  openPayment(product);
+
+}
+
+
+function openPayment(product){
 
   if(
-    h === "#terms" ||
-    h === "#privacy" ||
-    h === "#refund" ||
-    h === "#dmca"
+    !product ||
+    !product.paymentButtonId
   ){
 
-    legal(h.slice(1));
-    return;
-
-  }
-
-  document.querySelectorAll(".page")
-    .forEach(x => x.classList.remove("active"));
-
-  $("home").classList.add("active");
-
-  if(h !== "#home"){
-
-    setTimeout(() => {
-
-      const el = document.querySelector(h);
-
-      if(el){
-        el.scrollIntoView({
-          behavior:"smooth"
-        });
-      }
-
-    },30);
-
-  }
-
-}
-
-window.addEventListener("hashchange",route);
-
-document.querySelectorAll(".faq-q").forEach(button => {
-
-  button.addEventListener("click",() => {
-
-    const item = button.parentElement;
-
-    item.classList.toggle("open");
-
-    const span = button.querySelector("span");
-
-    span.textContent =
-      item.classList.contains("open") ? "−" : "+";
-
-  });
-
-});
-
-let toastTimer;
-
-function toast(message){
-
-  $("toast").textContent = message;
-
-  $("toast").classList.add("show");
-
-  clearTimeout(toastTimer);
-
-  toastTimer = setTimeout(() => {
-
-    $("toast").classList.remove("show");
-
-  },2200);
-
-}
-
-let selectedProduct = null;
-
-function escapeHTML(value){
-
-  return String(value).replace(
-    /[&<>'"]/g,
-    char => ({
-      "&":"&amp;",
-      "<":"&lt;",
-      ">":"&gt;",
-      "'":"&#39;",
-      '"':"&quot;"
-    }[char])
-  );
-
-}
-
-async function openCheckoutModal(product){
-
-  if(!product || !product.paymentButtonId){
-
     toast("Payment button unavailable");
+
     return;
 
   }
 
   selectedProduct = product;
 
-  $("checkoutProduct").innerHTML = `
-    <img src="${product.image}" alt="">
-    <div>
-      <strong>${escapeHTML(product.name)}</strong>
-      <span>₹29</span>
-    </div>
+  $("paymentProduct").innerHTML = `
+
+    <strong>
+      ${escapeHTML(product.name)}
+    </strong>
+
+    <span>₹29</span>
+
   `;
 
-  $("paymentTitle").textContent = "Secure Checkout";
-
-  $("paymentDescription").textContent =
-    "Complete your ₹29 payment below.";
-
-  const container = $("razorpayButtonContainer");
+  const container =
+    $("razorpayButtonContainer");
 
   container.innerHTML = "";
 
-  const form = document.createElement("form");
+  /*
+    Razorpay Payment Button scripts must be
+    inserted as actual script elements rather
+    than simply placed inside innerHTML.
+  */
 
-  const script = document.createElement("script");
+  const form =
+    document.createElement("form");
+
+  const script =
+    document.createElement("script");
 
   script.src =
     "https://checkout.razorpay.com/v1/payment-button.js";
@@ -1613,27 +1243,19 @@ async function openCheckoutModal(product){
   script.async = true;
 
   form.appendChild(script);
+
   container.appendChild(form);
 
-  $("checkoutModal").classList.add("active");
-
-  $("checkoutModal").setAttribute(
-    "aria-hidden",
-    "false"
-  );
+  $("paymentModal").classList.add("show");
 
   document.body.style.overflow = "hidden";
 
 }
 
-function closeCheckoutModal(){
 
-  $("checkoutModal").classList.remove("active");
+function closePayment(){
 
-  $("checkoutModal").setAttribute(
-    "aria-hidden",
-    "true"
-  );
+  $("paymentModal").classList.remove("show");
 
   $("razorpayButtonContainer").innerHTML = "";
 
@@ -1643,93 +1265,237 @@ function closeCheckoutModal(){
 
 }
 
-function checkout(){
 
-  if(!cart.length){
+/* PRODUCT DETAIL */
 
-    toast("Your cart is empty");
-    return;
+function viewProduct(id){
 
-  }
-
-  if(cart.length > 1){
-
-    toast("Purchase one bundle at a time");
-    return;
-
-  }
-
-  const product =
-    PRODUCTS.find(p => p.id === cart[0]);
-
-  openCheckoutModal(product);
+  location.hash =
+    "product/" + id;
 
 }
 
-function buyProduct(id){
+function showProduct(id){
 
   const product =
     PRODUCTS.find(p => p.id === id);
 
-  if(product){
-    openCheckoutModal(product);
+  if(!product){
+
+    location.hash = "products";
+
+    return;
+
   }
 
-}
-
-$("checkoutModal").addEventListener("click",event => {
-
-  if(event.target === $("checkoutModal")){
-    closeCheckoutModal();
-  }
-
-});
-
-document.addEventListener("keydown",event => {
-
-  if(event.key === "Escape"){
-    closeCheckoutModal();
-  }
-
-});
-
-function bootStore(){
-
-  try{
-
-    render();
-    updateCart();
-    route();
-
-    console.log(
-      "Reel Bundles loaded:",
-      PRODUCTS.length,
-      "products"
+  document
+    .querySelectorAll(".page")
+    .forEach(x =>
+      x.classList.remove("active")
     );
 
-  }catch(error){
+  $("productPage")
+    .classList.add("active");
 
-    console.error(
-      "Reel Bundles boot error:",
-      error
+  $("detailCount").textContent =
+    product.count + " CONTENT";
+
+  $("detailTitle").textContent =
+    product.name;
+
+  $("detailTitleText").textContent =
+    product.name;
+
+  $("detailDescription").textContent =
+    product.short;
+
+  $("detailBuy").onclick =
+    () => buyProduct(product.id);
+
+  $("detailAdd").onclick =
+    () => addToCart(product.id);
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+/* LEGAL */
+
+function legal(type){
+
+  const data = {
+
+    terms:[
+      "Terms & Conditions",
+      "Digital products are accessed electronically after successful payment. Customers are responsible for complying with applicable copyright, licensing and platform requirements. Purchasing access does not transfer ownership of third-party intellectual property."
+    ],
+
+    privacy:[
+      "Privacy Policy",
+      "Payment details are handled by Razorpay. This site does not intentionally store complete card or UPI credentials."
+    ],
+
+    refund:[
+      "Refund Policy",
+      "Digital products are supplied electronically after successful payment. Refund eligibility depends on the policy applicable to the purchase."
+    ],
+
+    dmca:[
+      "Copyright / DMCA",
+      "For copyright concerns regarding material distributed through the service, contact Reel Bundles with enough information to identify the material and explain the claimed rights."
+    ]
+
+  };
+
+  document
+    .querySelectorAll(".page")
+    .forEach(x =>
+      x.classList.remove("active")
     );
+
+  $("legalPage")
+    .classList.add("active");
+
+  $("legalTitle").textContent =
+    data[type][0];
+
+  $("legalText").textContent =
+    data[type][1];
+
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  });
+
+}
+
+
+/* ROUTING */
+
+function route(){
+
+  const hash =
+    location.hash || "#home";
+
+  if(hash.startsWith("#product/")){
+
+    showProduct(
+      hash.slice(9)
+    );
+
+    return;
+
+  }
+
+  if([
+    "#terms",
+    "#privacy",
+    "#refund",
+    "#dmca"
+  ].includes(hash)){
+
+    legal(
+      hash.slice(1)
+    );
+
+    return;
+
+  }
+
+  document
+    .querySelectorAll(".page")
+    .forEach(x =>
+      x.classList.remove("active")
+    );
+
+  $("home")
+    .classList.add("active");
+
+  if(hash !== "#home"){
+
+    setTimeout(() => {
+
+      const element =
+        document.querySelector(hash);
+
+      if(element){
+
+        element.scrollIntoView({
+          behavior:"smooth"
+        });
+
+      }
+
+    },30);
 
   }
 
 }
 
-if(document.readyState === "loading"){
 
-  document.addEventListener(
-    "DOMContentLoaded",
-    bootStore
-  );
+/* FAQ */
 
-}else{
+document
+  .querySelectorAll(".faq-q")
+  .forEach(button => {
 
-  bootStore();
+    button.onclick = () => {
+
+      const item =
+        button.parentElement;
+
+      item.classList.toggle("open");
+
+      button.querySelector("span")
+        .textContent =
+        item.classList.contains("open")
+          ? "−"
+          : "+";
+
+    };
+
+  });
+
+
+/* TOAST */
+
+function toast(message){
+
+  $("toast").textContent =
+    message;
+
+  $("toast")
+    .classList.add("show");
+
+  clearTimeout(toastTimer);
+
+  toastTimer =
+    setTimeout(() => {
+
+      $("toast")
+        .classList.remove("show");
+
+    },2200);
 
 }
+
+
+/* START */
+
+renderProducts();
+
+updateCart();
+
+addEventListener(
+  "hashchange",
+  route
+);
+
+route();
 
 </script>
 
